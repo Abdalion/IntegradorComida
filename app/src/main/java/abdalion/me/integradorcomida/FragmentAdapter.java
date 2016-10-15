@@ -20,7 +20,7 @@ public class FragmentAdapter extends FragmentStatePagerAdapter {
         super(fm);
         listaDeFragments = new ArrayList<>();
 
-        listaDeFragments.add(FragmentLugar.getNewFragmentLugar("Astrid y Gaston", R.drawable.astridygaston, "-31,151"));
+        listaDeFragments.add(FragmentLugar.getNewFragmentLugar("Astrid y Gaston", R.drawable.astridygaston, "-34.578411, -58.413194"));
         listaDeFragments.add(FragmentLugar.getNewFragmentLugar("BoraGó", R.drawable.borago, "-31,151"));
         listaDeFragments.add(FragmentLugar.getNewFragmentLugar("Central", R.drawable.central, "-31,151"));
         listaDeFragments.add(FragmentLugar.getNewFragmentLugar("Dom", R.drawable.dom, "-31,151"));

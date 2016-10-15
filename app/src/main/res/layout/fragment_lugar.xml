@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="abdalion.me.integradorcomida.FragmentLugar">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:id="@+id/fragment_lugar_iv_background"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#b7000000"
+        android:layout_gravity="bottom">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center_horizontal|bottom"
+        android:layout_marginBottom="60sp"
+        android:textColor="#ffffff"
+        android:id="@+id/fragment_lugar_tv_nombre"/>
+
+
+
+
+</FrameLayout>

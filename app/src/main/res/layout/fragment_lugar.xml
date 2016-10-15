@@ -6,6 +6,16 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Como llegar"
+        android:background="@color/colorAccent"
+        android:layout_gravity="bottom"
+        android:padding="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"/>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

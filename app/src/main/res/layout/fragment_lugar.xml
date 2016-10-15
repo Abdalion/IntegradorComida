@@ -12,21 +12,9 @@
         android:text="Mapa"
         android:background="@color/colorAccent"
         android:layout_gravity="bottom|center"
-        android:padding="5dp"
-        android:layout_marginRight="50sp"
-        android:layout_marginBottom="5dp"
+        android:padding="5sp"
+        android:layout_marginBottom="sdp"
         android:id="@+id/fragment_lugar_btn_comollegar"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Carta"
-        android:background="@color/colorAccent"
-        android:layout_gravity="bottom|center"
-        android:padding="5dp"
-        android:layout_marginLeft="50sp"
-        android:layout_marginBottom="5dp"
-        android:id="@+id/fragment_lugar_btn_carta"/>
 
     <ImageView
         android:layout_width="match_parent"

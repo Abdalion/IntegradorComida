@@ -22,6 +22,14 @@ public class Receta {
         ArrayList<Receta> arrayList = new ArrayList<>();
         arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos", "1- Pelar el pollo 2- Salar las bananas"));
         arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "Meter todo al horno"));
+        arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos", "1- Pelar el pollo 2- Salar las bananas"));
+        arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "Meter todo al horno"));
+        arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos", "1- Pelar el pollo 2- Salar las bananas"));
+        arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "Meter todo al horno"));
+        arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos", "1- Pelar el pollo 2- Salar las bananas"));
+        arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "Meter todo al horno"));
+        arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos", "1- Pelar el pollo 2- Salar las bananas"));
+        arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "Meter todo al horno"));
 
         return arrayList;
     }

@@ -13,22 +13,29 @@ import java.util.List;
  * Created by Egon on 16/10/2016.
  */
 
-public class AdaptadorRecetasRecycler extends RecyclerView.Adapter{
+public class AdaptadorRecetasRecycler extends RecyclerView.Adapter implements View.OnClickListener{
 
     private List<Receta> listaDeRecetas;
-    private Context context;
+    private View.OnClickListener listener;
 
-    public AdaptadorRecetasRecycler(List<Receta> listaDeRecetas, Context context) {
+    public AdaptadorRecetasRecycler(List<Receta> listaDeRecetas) {
         this.listaDeRecetas = listaDeRecetas;
-        this.context = context;
     }
 
+    public List<Receta> getListaDeRecetas() {
+        return listaDeRecetas;
+    }
+
+    public void setListener(View.OnClickListener listener) {
+        this.listener = listener;
+    }
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = (LayoutInflater)LayoutInflater.from(parent.getContext());
         View viewCelda = inflater.inflate(R.layout.item_receta,parent,false);
         RecetasViewHolder juguetesViewHolder = new RecetasViewHolder(viewCelda);
+        viewCelda.setOnClickListener(this);
         return juguetesViewHolder;
     }
 
@@ -42,6 +49,11 @@ public class AdaptadorRecetasRecycler extends RecyclerView.Adapter{
     @Override
     public int getItemCount() {
         return listaDeRecetas.size();
+    }
+
+    @Override
+    public void onClick(View view) {
+        listener.onClick(view);
     }
 
     private class RecetasViewHolder extends RecyclerView.ViewHolder {

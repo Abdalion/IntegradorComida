@@ -8,10 +8,15 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
 
         Button botonDondeComer = (Button) findViewById(R.id.activity_main_btn_donde_comer);
         botonDondeComer.setOnClickListener(new View.OnClickListener() {

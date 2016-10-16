@@ -7,36 +7,36 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Egon on 16/10/2016.
  */
 
-public class AdaptadorRecetasRecycler extends RecyclerView.Adapter {
+public class AdaptadorRecetasRecycler extends RecyclerView.Adapter{
 
-    public Context context;
-    public ArrayList<Receta> listaDeRecetas;
+    private List<Receta> listaDeRecetas;
+    private Context context;
 
-    public AdaptadorRecetasRecycler(ArrayList<Receta> listaDeRecetas, Context context) {
-        this.context = context;
+    public AdaptadorRecetasRecycler(List<Receta> listaDeRecetas, Context context) {
         this.listaDeRecetas = listaDeRecetas;
+        this.context = context;
     }
+
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = (LayoutInflater)LayoutInflater.from(parent.getContext());
-        View viewDeLaCelda = inflater.inflate(R.layout.item_receta,parent,false);
-        RecetasHolder recetasHolder = new RecetasHolder(viewDeLaCelda);
-        return recetasHolder;
-
+        View viewCelda = inflater.inflate(R.layout.item_receta,parent,false);
+        RecetasViewHolder juguetesViewHolder = new RecetasViewHolder(viewCelda);
+        return juguetesViewHolder;
     }
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         Receta unaReceta = listaDeRecetas.get(position);
-        RecetasHolder recetasHolder = (RecetasHolder) holder;
-        recetasHolder.cargarReceta(unaReceta);
+        RecetasViewHolder recetasViewHolder = (RecetasViewHolder) holder;
+        recetasViewHolder.cargarReceta(unaReceta);
     }
 
     @Override
@@ -44,18 +44,17 @@ public class AdaptadorRecetasRecycler extends RecyclerView.Adapter {
         return listaDeRecetas.size();
     }
 
-    private class RecetasHolder extends RecyclerView.ViewHolder {
-        private TextView textNombreReceta;
+    private class RecetasViewHolder extends RecyclerView.ViewHolder {
+        private TextView textViewNombreReceta;
 
-        public RecetasHolder(View view){
+        public RecetasViewHolder(View view){
             super(view);
-            textNombreReceta = (TextView)view.findViewById(R.id.item_receta_nombre);
+            textViewNombreReceta = (TextView)view.findViewById(R.id.item_receta_nombre);
         }
 
         public void cargarReceta(Receta unaReceta){
-            textNombreReceta.setText(unaReceta.getNombre());
+            textViewNombreReceta.setText(unaReceta.getNombre());
         }
 
     }
-
 }

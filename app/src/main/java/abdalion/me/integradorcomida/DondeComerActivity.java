@@ -14,7 +14,7 @@ public class DondeComerActivity extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
 
-        FragmentAdapter fragmentAdapter = new FragmentAdapter(fragmentManager);
+        FragmentAdapterViewPager fragmentAdapter = new FragmentAdapterViewPager(fragmentManager);
 
         ViewPager viewPager = (ViewPager) findViewById(R.id.activity_donde_comer_viewpager);
 

@@ -12,11 +12,11 @@ import java.util.ArrayList;
  * Created by Egon on 101.54/101.50/-31.30101.56.
  */
 
-public class FragmentAdapter extends FragmentStatePagerAdapter {
+public class FragmentAdapterViewPager extends FragmentStatePagerAdapter {
 
     private ArrayList<Fragment> listaDeFragments;
     
-    public FragmentAdapter(FragmentManager fm) {
+    public FragmentAdapterViewPager(FragmentManager fm) {
         super(fm);
         listaDeFragments = new ArrayList<>();
 

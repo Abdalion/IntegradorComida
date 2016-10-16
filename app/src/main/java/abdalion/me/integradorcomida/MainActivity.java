@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button botonRecetas = (Button) findViewById(R.id.activity_main_btn_recetas);
         botonRecetas.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent recetas = new Intent(MainActivity.this, Recetas.class);
+                Intent recetas = new Intent(MainActivity.this, RecetasActivity.class);
                 startActivity(recetas);
             }
         });

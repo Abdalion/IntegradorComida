@@ -3,7 +3,7 @@ package abdalion.me.integradorcomida;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Recetas extends AppCompatActivity {
+public class RecetasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

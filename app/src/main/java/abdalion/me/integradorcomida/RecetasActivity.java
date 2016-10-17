@@ -28,7 +28,7 @@ public class RecetasActivity extends AppCompatActivity {
 
         recyclerViewRecetas.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
 
-        adaptadorRecetasRecycler = new AdaptadorRecetasRecycler(listaDeRecetas);
+        adaptadorRecetasRecycler = new AdaptadorRecetasRecycler(listaDeRecetas, this);
         adaptadorRecetasRecycler.setListener(new ListenerRecetas());
 
         recyclerViewRecetas.setAdapter(adaptadorRecetasRecycler);

@@ -24,7 +24,7 @@
             android:textSize="30sp"
             android:padding="15sp"
             android:textColor="#ffffff"
-            android:background="@color/colorAccent"
+            android:background="@color/colorPrimaryText"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="150sp"
             android:id="@+id/activity_main_btn_donde_comer"/>
@@ -37,7 +37,7 @@
             android:textSize="30sp"
             android:padding="15sp"
             android:textColor="#ffffff"
-            android:background="@color/colorAccent"
+            android:background="@color/colorPrimaryText"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
             android:id="@+id/activity_main_btn_recetas"

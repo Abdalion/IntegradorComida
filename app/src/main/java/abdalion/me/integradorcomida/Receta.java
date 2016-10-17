@@ -20,16 +20,10 @@ public class Receta {
 
     public static ArrayList<Receta> obtenerListaDeRecetas() {
         ArrayList<Receta> arrayList = new ArrayList<>();
-        arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos", "1- Pelar el pollo 2- Salar las bananas"));
-        arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "Meter todo al horno"));
-        arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos", "1- Pelar el pollo 2- Salar las bananas"));
-        arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "Meter todo al horno"));
-        arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos", "1- Pelar el pollo 2- Salar las bananas"));
-        arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "Meter todo al horno"));
-        arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos", "1- Pelar el pollo 2- Salar las bananas"));
-        arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "Meter todo al horno"));
-        arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos", "1- Pelar el pollo 2- Salar las bananas"));
-        arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "Meter todo al horno"));
+        arrayList.add(new Receta("Pollo al spiedo", "2 bananas y 3 pollos","1- Pelar el pollo 2- Salar las bananas"));
+        arrayList.add(new Receta("Salmon rosado", "50g de manteca, Filet de salmon, ajo", "1- Meter todo al horno"));
+        arrayList.add(new Receta("Colita de cuadril", "Una colita de cuadril", "1- All to the horno"));
+        arrayList.add(new Receta("Arroz con leche", "Arroz, azucar, canela y leche", "Hervir arroz, agregar lo demas"));
 
         return arrayList;
     }

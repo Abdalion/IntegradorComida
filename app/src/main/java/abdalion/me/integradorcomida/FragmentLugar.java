@@ -57,9 +57,8 @@ public class FragmentLugar extends Fragment {
         TextView textView = (TextView) fragment.findViewById(R.id.fragment_lugar_tv_nombre);
         textView.setText(nombre);
 
-        Drawable drawable = getResources().getDrawable(backgroundID);
         ImageView imageView = (ImageView) fragment.findViewById(R.id.fragment_lugar_iv_background);
-        imageView.setBackground(drawable);
+        imageView.setImageResource(backgroundID);
 
         Button botonRecetas = (Button) fragment.findViewById(R.id.fragment_lugar_btn_comollegar);
         botonRecetas.setOnClickListener(new View.OnClickListener() {

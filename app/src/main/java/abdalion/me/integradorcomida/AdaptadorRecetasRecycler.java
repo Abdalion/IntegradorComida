@@ -1,11 +1,14 @@
 package abdalion.me.integradorcomida;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -17,9 +20,12 @@ public class AdaptadorRecetasRecycler extends RecyclerView.Adapter implements Vi
 
     private List<Receta> listaDeRecetas;
     private View.OnClickListener listener;
+    private Context context;
+    private Integer contadorDeItems = 0;
 
-    public AdaptadorRecetasRecycler(List<Receta> listaDeRecetas) {
+    public AdaptadorRecetasRecycler(List<Receta> listaDeRecetas, Context context) {
         this.listaDeRecetas = listaDeRecetas;
+        this.context = context;
     }
 
     public List<Receta> getListaDeRecetas() {
@@ -32,11 +38,25 @@ public class AdaptadorRecetasRecycler extends RecyclerView.Adapter implements Vi
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        contadorDeItems++;
+
         LayoutInflater inflater = (LayoutInflater)LayoutInflater.from(parent.getContext());
         View viewCelda = inflater.inflate(R.layout.item_receta,parent,false);
-        RecetasViewHolder juguetesViewHolder = new RecetasViewHolder(viewCelda);
+
+        TextView itemRecetaNombre = (TextView) viewCelda.findViewById(R.id.item_receta_nombre);
+
+        if(contadorDeItems % 2 == 0) {
+
+            itemRecetaNombre.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimaryDark));
+        }
+        else {
+            itemRecetaNombre.setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimary));
+        }
+
+
+        RecetasViewHolder recetasViewHolder = new RecetasViewHolder(viewCelda);
         viewCelda.setOnClickListener(this);
-        return juguetesViewHolder;
+        return recetasViewHolder;
     }
 
     @Override

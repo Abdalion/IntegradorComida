@@ -4,16 +4,16 @@
     android:layout_height="match_parent"
     tools:context="abdalion.me.integradorcomida.FragmentLugar">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mapa"
         android:background="@color/colorAccent"
-        android:layout_gravity="bottom|center"
-        android:padding="5sp"
-        android:layout_marginBottom="5dp"
+        android:layout_gravity="right|bottom"
+        android:padding="25sp"
+        android:textSize="20sp"
+        android:layout_marginRight="25sp"
+        android:layout_marginBottom="10dp"
         android:id="@+id/fragment_lugar_btn_comollegar"/>
 
     <ImageView
@@ -33,10 +33,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text=""
-        android:textSize="20sp"
-        android:gravity="center_horizontal|bottom"
-        android:layout_marginBottom="60sp"
+        android:text="TEST TEXT"
+        android:textSize="30sp"
+        android:gravity="bottom"
+        android:layout_marginBottom="50sp"
         android:textColor="#ffffff"
         android:id="@+id/fragment_lugar_tv_nombre"/>
 

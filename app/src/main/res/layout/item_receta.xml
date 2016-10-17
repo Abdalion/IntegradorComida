@@ -12,8 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardElevation="5sp"
-        android:background="@color/colorPrimaryDark"
-        android:layout_marginBottom="10sp"
+        android:layout_marginBottom="3sp"
         app:cardCornerRadius="1sp">
 
         <TextView
@@ -21,6 +20,7 @@
             android:layout_height="wrap_content"
             android:textSize="30sp"
             android:layout_gravity="center"
+            android:gravity="center"
             android:padding="25sp"
             android:background="@color/colorPrimaryDark"
             android:textColor="#ffffff"

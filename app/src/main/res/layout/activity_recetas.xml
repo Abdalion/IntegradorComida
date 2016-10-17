@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_recetas"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="abdalion.me.integradorcomida.RecetasActivity"
+    android:id="@+id/activity_recetas_recyclerViewContainer"
     android:background="@color/colorPrimary">
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/activity_recetas_recyclerView">
 
-    </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>

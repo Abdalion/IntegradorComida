@@ -15,7 +15,7 @@ import java.util.List;
 
 import static abdalion.me.integradorcomida.R.id.activity_recetas_recyclerViewContainer;
 
-public class RecetasActivity extends AppCompatActivity {
+public class RecetasActivity extends AppCompatActivity implements ListaRecyclerFragment.Escuchable{
 
 
 
@@ -33,4 +33,19 @@ public class RecetasActivity extends AppCompatActivity {
     }
 
 
+    //FALTA SETTEAR EL BUNDLE
+    @Override
+    public void onClickItem(Receta receta) {
+        DetalleRecetaFragment detalleRecetaFragment = new DetalleRecetaFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("nombre", receta.getNombre());
+        bundle.putString("descripcion", receta.getDescripcion());
+        bundle.putString("pasos", receta.getPasos());
+
+        detalleRecetaFragment.setArguments(bundle);
+
+        getSupportFragmentManager().beginTransaction()
+                .replace(R.id.activity_recetas_recyclerViewContainer, detalleRecetaFragment)
+                .commit();
+    }
 }

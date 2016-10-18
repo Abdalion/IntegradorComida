@@ -1,13 +1,52 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="abdalion.me.integradorcomida.DetalleRecetaFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_marginTop="15sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/activity_detalle_receta_titulo"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="150sp"
+        android:textColor="@color/colorPrimaryText"
+        android:text="Descripcion:"
+        android:id="@+id/activity_detalle_final_descripcion"/>
 
-</FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@+id/activity_detalle_final_descripcion"
+        android:text=""
+        android:id="@+id/activity_detalle_descripcion"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@+id/activity_detalle_descripcion"
+        android:textColor="@color/colorPrimaryText"
+        android:text="Pasos:"
+        android:id="@+id/activity_detalle_final_pasos"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_below="@+id/activity_detalle_final_pasos"
+        android:text=""
+        android:id="@+id/activity_detalle_pasos"/>
+
+
+</RelativeLayout>
